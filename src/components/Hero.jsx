@@ -5,7 +5,7 @@ const Hero = () => {
     <>
      <section
       id="hero"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 bg-[#1E1E23] text-gray-200"
+      className="min-h-screen flex flex-col mt-10 md:flex-row items-center justify-center px-6 md:px-20 bg-[#1E1E23] text-gray-200"
     >
       {/* Left Content */}
       <div className="flex-1 pt-15 text-center md:text-left space-y-6">

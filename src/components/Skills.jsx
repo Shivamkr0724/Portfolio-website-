@@ -1,4 +1,5 @@
-import skillDedsign from "../assets/image/Group36.png"
+import skillDedsign from "../assets/image/Group36.png";
+
 /* compact glass-neon card */
 function MiniCard({ title, lines = [] }) {
   return (
@@ -26,60 +27,55 @@ function MiniLadder({ className = "" }) {
   );
 }
 
-
 const Skills = () => {
   return (
-    <section id="skills">
-         <div className="flex items-center gap-3 mb-6">
-        <h2 className="font-mono text-3xl text-slate-100">#skills</h2>
+    <section id="skills" className="px-6 md:px-12 py-16 text-slate-300">
+      {/* Title */}
+      <div className="flex items-center gap-3 mb-8">
+        <h2 className="font-mono text-2xl md:text-3xl text-slate-100">#skills</h2>
         <div className="h-[2px] bg-purple-500/60 flex-1" />
       </div>
-      <div className="flex gap-5">
-        <div className=" p-10 w-2/5]">
-            <img src={skillDedsign} alt="art" />
-        </div>
-        <div className="w-2/3">
-            <aside className=" max-w-[640px] relative" /* 50% width */>
-      {/* title row */}
-      {/* ladder */}
-      <MiniLadder className="hidden md:block" />
 
-      {/* compact grid that mirrors Figma spacing */}
-      <div className="grid grid-cols-2 gap-3 relative z-10">
-        {/* left column */}
-        <div className="space-y-3">
-          <MiniCard
-            title="Languages"
-            lines={["JavaScript c++", "Java"]}
-          />
-          <MiniCard
-            title="Web Technoloiges"
-            lines={["HTML  CSS  Tailwind CSS", "Appwrite"]}
+      {/* Responsive layout */}
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+        {/* Left image */}
+        <div className="flex justify-center md:w-1/2">
+          <img
+            src={skillDedsign}
+            alt="art"
+            className="w-4/5 max-w-[350px] md:max-w-[500px] object-contain"
           />
         </div>
 
-        {/* right column */}
-        <div className="space-y-3">
-          <MiniCard
-            title="Databases"
-            lines={["MySql"]}
-          />
-          <MiniCard
-            title="Tools"
-            lines={["WebStrome  Intellij", "VScode", "Git GitHub"]}
-          />
-          <MiniCard
-            title="Frameworks"
-            lines={["React  ", "React Native"]}
-          />
-        </div>
-      </div>
-    </aside>
+        {/* Right cards section */}
+        <div className="w-full md:w-1/2">
+          <aside className="max-w-[640px] mx-auto relative">
+            <MiniLadder className="hidden md:block" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
+              {/* Left column */}
+              <div className="space-y-3">
+                <MiniCard title="Languages" lines={["JavaScript", "C++", "Java"]} />
+                <MiniCard
+                  title="Web Technologies"
+                  lines={["HTML", "CSS", "Tailwind CSS", "Appwrite"]}
+                />
+              </div>
+
+              {/* Right column */}
+              <div className="space-y-3">
+                <MiniCard title="Databases" lines={["MySQL"]} />
+                <MiniCard
+                  title="Tools"
+                  lines={["WebStorm", "IntelliJ", "VS Code", "Git", "GitHub"]}
+                />
+                <MiniCard title="Frameworks" lines={["React", "React Native"]} />
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
-    
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

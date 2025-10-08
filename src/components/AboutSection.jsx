@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import hero from "../assets/image/hero-image.png";
 
 const AboutSection = () => {
@@ -36,13 +36,13 @@ const AboutSection = () => {
         </button>
       </div>
 
-      {/* Right Image */}
-      <div className="w-full md:w-1/2 mt-10 md:mt-0 flex items-center justify-center z-10">
+      {/* Right Image — hidden on mobile */}
+      <div className="hidden md:flex w-full md:w-1/2 mt-10 md:mt-0 items-center justify-center z-10">
         <div className="w-80 h-auto flex items-center justify-center">
           <img
             src={hero}
             alt="Hero"
-            className="w-80 md:w-[40vw] h-auto object-cover rounded-lg border border-gray-700"
+            className="w-80 md:w-[40vw] h-auto object-cover rounded-lg"
           />
         </div>
       </div>

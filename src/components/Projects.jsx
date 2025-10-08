@@ -24,7 +24,7 @@ const projects = [
     excerpt: "Discover and explore movies ranked by real engagement.",
     image: porjectThree,
     gitHubLink: "https://github.com/Shivamkr0724/Movie_app",
-    LiveLink: "",
+    LiveLink: "https://github.com/Shivamkr0724/Movie_app",
   },
 ];
 
