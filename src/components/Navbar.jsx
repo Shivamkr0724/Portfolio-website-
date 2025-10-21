@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // For hamburger and close icons (install with: npm i lucide-react)
+import { Menu, X } from "lucide-react"; 
+import navLogo from "../assets/image/nav-logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="w-4 h-4 bg-gray-200"></div>
+          <img src={navLogo} alt=""  className="w-7 text-purple-500"/>
           <span className="font-bold text-lg">Shivam</span>
         </div>
 

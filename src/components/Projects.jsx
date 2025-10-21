@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
 import projectOne from "../assets/image/project1.png"
 import projectTwo from "../assets/image/project2.png"
 import porjectThree from "../assets/image/project3.png"
+import TargetCursor from "./TargetCursor";
+
 const projects = [
   {
     title: "AI resume Analyzer",
@@ -59,6 +62,7 @@ function ProjectCard({ p }) {
 
         {/* bottom controls row */}
         <div className="mt-6 flex items-center gap-4">
+             <TargetCursor/>
            <a
             href={p.LiveLink}
             target="_blank" 
@@ -88,6 +92,12 @@ export default function Projects() {
       <div className="mb-8 flex items-center gap-6">
         <h2 className="font-mono  text-white text-3xl">#projects</h2>
         <div className="h-px flex-1 bg-purple-400" />
+         <Link
+           to="/allProjects"
+               className="flex items-center gap-2 text-white text-sm font-semibold hover:gap-3 transition-all duration-300">
+             View all
+          <span className="text-lg">~~{`>`}</span>
+         </Link>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
