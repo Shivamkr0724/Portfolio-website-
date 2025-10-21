@@ -6,12 +6,14 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import AllProjects from "./pages/AllProjects";
+import AllProjects from "./pages/AllProjects.jsx";
+import ScrollToHash from "./ScrollToHash.jsx";
 
 export default function App(){
   return (
     <div className="bg-[#1E1E23]">
         <Navbar/>
+        <ScrollToHash/>
         <div className="max-w-[1180px] mx-auto px-[20px]">
           <Routes>
             <Route 

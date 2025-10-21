@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; 
-import navLogo from "../assets/image/nav-logo.png"
+import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom"; // <-- import Link
+import navLogo from "../assets/image/nav-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,26 +14,36 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={navLogo} alt=""  className="w-7 text-purple-500"/>
+          <img src={navLogo} alt="" className="w-7 text-purple-500" />
           <span className="font-bold text-lg">Shivam</span>
         </div>
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex space-x-6 text-sm font-medium">
           <li>
-            <a href="#hero" className="hover:text-purple-400 transition">home</a>
+            <Link to="/#hero" className="hover:text-purple-400 transition">
+              home
+            </Link>
           </li>
           <li>
-            <a href="#projects" className="hover:text-purple-400 transition">projects</a>
+            <Link to="/#projects" className="hover:text-purple-400 transition">
+              projects
+            </Link>
           </li>
           <li>
-            <a href="#skills" className="hover:text-purple-400 transition">skills</a>
+            <Link to="/#skills" className="hover:text-purple-400 transition">
+              skills
+            </Link>
           </li>
           <li>
-            <a href="#about" className="hover:text-purple-400 transition">about-me</a>
+            <Link to="/#about" className="hover:text-purple-400 transition">
+              about-me
+            </Link>
           </li>
           <li>
-            <a href="#contacts" className="hover:text-purple-400 transition">contacts</a>
+            <Link to="/#contacts" className="hover:text-purple-400 transition">
+              contacts
+            </Link>
           </li>
         </ul>
 
@@ -60,19 +71,29 @@ const Navbar = () => {
 
         <ul className="flex flex-col px-6 py-6 space-y-5 text-lg font-medium">
           <li>
-            <a onClick={handleLinkClick} href="#hero" className="hover:text-purple-400 transition">home</a>
+            <Link onClick={handleLinkClick} to="/#hero" className="hover:text-purple-400 transition">
+              home
+            </Link>
           </li>
           <li>
-            <a onClick={handleLinkClick} href="#projects" className="hover:text-purple-400 transition">projects</a>
+            <Link onClick={handleLinkClick} to="/#projects" className="hover:text-purple-400 transition">
+              projects
+            </Link>
           </li>
           <li>
-            <a onClick={handleLinkClick} href="#skills" className="hover:text-purple-400 transition">skills</a>
+            <Link onClick={handleLinkClick} to="/#skills" className="hover:text-purple-400 transition">
+              skills
+            </Link>
           </li>
           <li>
-            <a onClick={handleLinkClick} href="#about" className="hover:text-purple-400 transition">about-me</a>
+            <Link onClick={handleLinkClick} to="/#about" className="hover:text-purple-400 transition">
+              about-me
+            </Link>
           </li>
           <li>
-            <a onClick={handleLinkClick} href="#contacts" className="hover:text-purple-400 transition">contacts</a>
+            <Link onClick={handleLinkClick} to="/#contacts" className="hover:text-purple-400 transition">
+              contacts
+            </Link>
           </li>
         </ul>
       </div>

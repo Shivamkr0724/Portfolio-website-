@@ -31,9 +31,9 @@ const AboutSection = () => {
           strengthen their online presence.
         </p>
 
-        <button className="border border-purple-500 text-white px-6 py-2 rounded-md hover:bg-purple-500 hover:text-black transition">
+        {/* <button className="border border-purple-500 text-white px-6 py-2 rounded-md hover:bg-purple-500 hover:text-black transition">
           Read more →
-        </button>
+        </button> */}
       </div>
 
       {/* Right Image — hidden on mobile */}
