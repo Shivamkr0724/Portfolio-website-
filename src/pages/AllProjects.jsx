@@ -3,6 +3,7 @@ import projectTwo from "../assets/image/project2.png"
 import porjectThree from "../assets/image/project3.png"
 import porjectFour from "../assets/image/project4.png"
 import porjectFive from "../assets/image/project5.png"
+import porjectSix from "../assets/image/project6.png"
 import TargetCursor from "../components/TargetCursor";
 
 
@@ -56,8 +57,17 @@ const projects = [
     title: "Assembly-Endgame",
     stack: ["React", "CSS", "clsx"],
     img: porjectFive,
-    desc: "You’re using it rn",
-    github: "https://github.com/Shivamkr0724/Assembly-Endgame",
+    desc: "A fun and interactive word guessing game built with React.js that challenges players to guess hidden words within limited attempts.",
+    github: "https://github.com/Shivamkr0724/JSON-Tree-Visualizer",
+    live: "https://json-tree-visualizer-nine.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "JSON-Tree-Visualizer",
+    stack: ["React", "Tailwind Css", "React Flow"],
+    img: porjectSix,
+    desc: "It allows users to easily visualize, explore, and search through complex JSON data in an interactive tree format.",
+    github: "https://json-tree-visualizer-nine.vercel.app/",
     live: "https://assembly-endgame-amber.vercel.app/",
   },
 ];
