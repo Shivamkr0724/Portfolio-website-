@@ -27,50 +27,118 @@ const projects = [
   },
   {
     id: 2,
-    title: "TastyTrove",
-    stack: ["React", "CSS", "Mistral AI"],
+    title: "Green Cart",
+    stack: ["React", "Node.js", "Express.js", "MongoDB"],
     img: projectTwo,
-    desc: "Type what you have — get delicious AI-powered recipe ideas",
-    github:"https://github.com/Shivamkr0724/TastyTrove.git",
-    live: "https://recipe-app-ebon-kappa.vercel.app/",
+    desc: "A full-stack grocery delivery app with real-time cart, admin management, and secure user ordering.",
+    github:"https://github.com/Shivamkr0724/FullStack-Green-Cart.git",
+    live: "https://green-cart-jxqw.vercel.app/",
   },
   {
     id: 3,
+    title: "YC-Directory",
+    stack: ["React","Next.js","Sanity","TailwindCSS","ShadCN","TypeScript"],
+    img: porjectThree,
+    desc: "Discover and explore movies ranked by real engagement.",
+    github: "https://github.com/Shivamkr0724/YC-Directory.git",
+    live: "https://yc-directory-pied-one.vercel.app/",
+  },
+  {
+    id: 4,
     title: "Flim-Flix",
     stack: ["React-Native", "TypeScript", "Appwrite", "Expo", "Tailwind CSS", "NativeWind"],
-    img: porjectThree,
+    img: porjectFour,
     desc: "Discover and explore movies ranked by real engagement.",
     github: "https://github.com/Shivamkr0724/Movie_app",
     live: "https://github.com/Shivamkr0724/Movie_app",
   },
+  // {
+  //   id: 5,
+  //   title: "Assembly-Endgame",
+  //   stack: ["React", "CSS", "clsx"],
+  //   img: porjectFive,
+  //   desc: "A fun and interactive word guessing game built with React.js that challenges players to guess hidden words within limited attempts.",
+  //   github: "https://github.com/Shivamkr0724/JSON-Tree-Visualizer",
+  //   live: "https://json-tree-visualizer-nine.vercel.app/",
+  // },
+  // {
+  //   id: 6,
+  //   title: "JSON-Tree-Visualizer",
+  //   stack: ["React", "Tailwind Css", "React Flow"],
+  //   img: porjectSix,
+  //   desc: "It allows users to easily visualize, explore, and search through complex JSON data in an interactive tree format.",
+  //   github: "https://json-tree-visualizer-nine.vercel.app/",
+  //   live: "https://assembly-endgame-amber.vercel.app/",
+  // },
+];
+
+const smallProjects = [
+  {
+    id: 1,
+    tag: "React CSS Mistral AI",
+    title: "TastyTrove 🧑‍🍳",
+    desc: "Type what you have — get delicious AI-powered recipe ideas",
+    live: "https://recipe-app-ebon-kappa.vercel.app/",
+    github:"https://github.com/Shivamkr0724/TastyTrove.git"
+  },
+  {
+    id: 2,
+    tag: "React CSS nanoid",
+    title: "Tenzies 🎲",
+    desc: "A fast-paced dice game built with React where players roll dice to match all numbers and win",
+    live: "https://tenzies-game-nine-flax.vercel.app/",
+    github: "https://github.com/Shivamkr0724/Tenzies-Game"
+  },
+  {
+    id: 3,
+    stack: "React CSS clsx",
+    title: "Assembly-Endgame 👾",
+    desc: "A fun and interactive word guessing game built with React.js that challenges players to guess hidden words within limited attempts.",
+    live: "https://json-tree-visualizer-nine.vercel.app/",
+    github: "https://github.com/Shivamkr0724/JSON-Tree-Visualizer"
+  },
   {
     id: 4,
-    title: "Tenzies",
-    stack: ["React", "CSS", "nanoid"],
-    img: porjectFour,
-    desc: "A fast-paced dice game built with React where players roll dice to match all numbers and win",
-    github: "https://github.com/Shivamkr0724/Tenzies-Game",
-    live: "https://tenzies-game-nine-flax.vercel.app/",
+    tag: "React Tailwind Css React Flow",
+    title: "JSON-Tree-Visualizer 🌲",
+    desc: "It allows users to easily visualize, explore, and search through complex JSON data in an interactive tree format.",
+    live: "https://assembly-endgame-amber.vercel.app/",
+    github: "https://json-tree-visualizer-nine.vercel.app/"
   },
   {
     id: 5,
-    title: "Assembly-Endgame",
-    stack: ["React", "CSS", "clsx"],
-    img: porjectFive,
-    desc: "A fun and interactive word guessing game built with React.js that challenges players to guess hidden words within limited attempts.",
-    github: "https://github.com/Shivamkr0724/JSON-Tree-Visualizer",
-    live: "https://json-tree-visualizer-nine.vercel.app/",
+    tag: "React Appwrite Tailwind-CSS",
+    title: "Movies IQ 🎬",
+    desc: "Discover and explore movies ranked by real engagement.",
+    live: "https://react-movie-app-sigma-two.vercel.app/",
+    github: "https://github.com/Shivamkr0724/React_movie-app.git"
   },
   {
     id: 6,
-    title: "JSON-Tree-Visualizer",
-    stack: ["React", "Tailwind Css", "React Flow"],
-    img: porjectSix,
-    desc: "It allows users to easily visualize, explore, and search through complex JSON data in an interactive tree format.",
-    github: "https://json-tree-visualizer-nine.vercel.app/",
-    live: "https://assembly-endgame-amber.vercel.app/",
+    tag: "React, Node.js , Express.js, MongoDB",
+    title: "Full Stack Todo (TypeScript) 📋",
+    desc: "A full-stack Todo application built MERN STACK and JWT Authentication.",
+    live: "https://to-do-pi-fawn.vercel.app",
+    github: "https://github.com/Shivamkr0724/ToDo.git"
+  },
+  {
+    id: 7,
+    tag: "React Tailwind-CSS",
+    title: "Weather App 🌥️",
+    desc: "Lightweight weather application displaying live weather data powered by the Open-Meteo API.",
+    live: "https://weather-app-five-lake-27.vercel.app/",
+    github: "https://github.com/Shivamkr0724/Weather-App.git"
+  },
+  {
+    id: 8,
+    tag: "React, Node.js , Express.js, MongoDB",
+    title: "From The Other Side 👻",
+    desc: "Full-stack web app for posting and discovering supernatural stories with user authentication and blog-style entries.",
+    live: "https://github.com/Shivamkr0724/FromTheOtherSide.git",
+    github: "https://github.com/Shivamkr0724/FromTheOtherSide.git"
   },
 ];
+
 
 function Card({ p }) {
   return (
@@ -119,6 +187,55 @@ function Card({ p }) {
   );
 }
 
+function SmallCard({ data }) {
+  return (
+    <article className="border border-white/10 bg-slate-900/40 p-4 rounded flex flex-col gap-4 hover:border-purple-400/40 transition">
+      
+      {/* tag */}
+      <span className="text-xs text-purple-300 font-mono opacity-80">
+        {data.tag}
+      </span>
+
+      {/* title */}
+      <h3 className="text-white text-lg font-semibold tracking-tight">
+        {data.title}
+      </h3>
+
+      {/* desc */}
+      <p className="text-slate-300/70 text-sm min-h-[45px]">
+        {data.desc}
+      </p>
+
+      {/* buttons */}
+      <div className="mt-auto flex items-center gap-3">
+        
+        {/* LIVE */}
+        <a
+          href={data.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-sm border border-fuchsia-400/40 px-4 py-2 font-mono text-sm text-slate-200 hover:bg-fuchsia-500/10 transition"
+        >
+          Live ↗
+        </a>
+
+        {/* GitHub */}
+        <a
+          href={data.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-auto inline-flex items-center gap-2 rounded-sm border border-fuchsia-400/40 px-4 py-2 font-mono text-sm text-slate-200 hover:bg-fuchsia-500/10 transition"
+        >
+          GitHub ↗
+        </a>
+
+      </div>
+
+    </article>
+  );
+}
+
+
 
 const AllProjects = () => {
   return (
@@ -157,7 +274,26 @@ const AllProjects = () => {
             <Card key={p.id} p={p} />
           ))}
         </div>
-      </section>
+
+        {/* === SMALL PROJECTS SECTION === */}
+    <section className="mx-auto max-w-6xl px-4 mt-20">
+
+        <div className="mb-6 flex items-center gap-3">
+        <span className="text-purple-400 font-bold text-2xl">#</span>
+         <h2 className="text-white text-xl sm:text-2xl font-semibold tracking-tight">
+          small-projects
+         </h2>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-4">
+          {smallProjects.map((p) => (
+            <SmallCard key={p.id} data={p} />
+          ))}
+        </div>
+  
+     </section>
+
+    </section>
     </>
   );
 };

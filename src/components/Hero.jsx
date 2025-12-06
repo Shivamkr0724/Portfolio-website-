@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="absolute top-50 right-12 w-64 h-64 border-2 border-purple-400 z-0">#</div>
 
         {/* Status Bar */}
-        <div className="mt-6 mx-auto bg-[#2A2A35] text-sm text-gray-300 px-4 py-2 rounded-md flex items-center gap-2 shadow">
+        <div className="mt-0 mx-auto bg-[#2A2A35] text-sm text-gray-300 px-4 py-2 rounded-md flex items-center gap-2 shadow">
           <span className="w-3 h-3 bg-purple-400 inline-block rounded-sm"></span>
           Open to work <span className="font-bold">Portfolio</span>
         </div>

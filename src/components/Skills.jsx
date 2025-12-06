@@ -1,13 +1,32 @@
 import skillDedsign from "../assets/image/Group36.png";
 
 /* compact glass-neon card */
-function MiniCard({ title, lines = [] }) {
+// function MiniCard({ title, lines = [] }) {
+//   return (
+//     <section className="rounded-md overflow-hidden border border-slate-600/70 bg-slate-900/60 backdrop-blur-md ring-1 ring-inset ring-purple-400/10 shadow-[0_0_0_1px_rgba(167,139,250,0.12),0_10px_24px_-12px_rgba(0,0,0,0.5)]">
+//       <header className="px-3 py-1.5 text-[13px] font-mono font-semibold tracking-wide border-b border-slate-700/60 text-slate-100">
+//         {title}
+//       </header>
+//       <ul className="px-3 py-2 text-[13px] leading-6 font-mono text-slate-300 space-y-1">
+//         {lines.map((l, i) => (
+//           <li key={i}>{l}</li>
+//         ))}
+//       </ul>
+//     </section>
+//   );
+// }
+
+function MiniCard({ title, lines = [], twoCols = false }) {
   return (
     <section className="rounded-md overflow-hidden border border-slate-600/70 bg-slate-900/60 backdrop-blur-md ring-1 ring-inset ring-purple-400/10 shadow-[0_0_0_1px_rgba(167,139,250,0.12),0_10px_24px_-12px_rgba(0,0,0,0.5)]">
       <header className="px-3 py-1.5 text-[13px] font-mono font-semibold tracking-wide border-b border-slate-700/60 text-slate-100">
         {title}
       </header>
-      <ul className="px-3 py-2 text-[13px] leading-6 font-mono text-slate-300 space-y-1">
+
+      <ul
+        className={`px-3 py-2 text-[13px] leading-6 font-mono text-slate-300 gap-2 
+          ${twoCols ? "grid grid-cols-2" : "space-y-1"}`}
+      >
         {lines.map((l, i) => (
           <li key={i}>{l}</li>
         ))}
@@ -15,6 +34,7 @@ function MiniCard({ title, lines = [] }) {
     </section>
   );
 }
+
 
 /* small ladder from bottom center with two arms */
 function MiniLadder({ className = "" }) {
@@ -48,31 +68,34 @@ const Skills = () => {
         </div>
 
         {/* Right cards section */}
-        <div className="w-full md:w-1/2">
-          <aside className="max-w-[640px] mx-auto relative">
-            <MiniLadder className="hidden md:block" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
-              {/* Left column */}
-              <div className="space-y-3">
-                <MiniCard title="Languages" lines={["JavaScript", "C++", "Java"]} />
-                <MiniCard
-                  title="Web Technologies"
-                  lines={["HTML", "CSS", "Tailwind CSS", "Appwrite"]}
-                />
-              </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
 
-              {/* Right column */}
-              <div className="space-y-3">
-                <MiniCard title="Databases" lines={["MySQL"]} />
-                <MiniCard
-                  title="Tools"
-                  lines={["WebStorm", "IntelliJ", "VS Code", "Git", "GitHub"]}
-                />
-                <MiniCard title="Frameworks" lines={["React", "React Native"]} />
-              </div>
-            </div>
-          </aside>
-        </div>
+  {/* Left column */}
+  <div className="space-y-3">
+    <MiniCard title="Languages" lines={["JavaScript", "C++", "Java"]} />
+
+    <MiniCard
+      title="Web Technologies"
+      twoCols={true}          // ← two-column layout
+      lines={["HTML", "CSS", "React.js", "Node.js", "Express.js", "Next.js", "Tailwind-CSS"]}
+    />
+  </div>
+
+  {/* Right column */}
+  <div className="space-y-3">
+    <MiniCard title="Databases" twoCols={true} lines={["MySQL", "MongoDB"]} />
+
+    <MiniCard
+      title="Tools"
+      twoCols={true}          // ← two-column layout
+      lines={["WebStorm", "IntelliJ", "VS Code", "Git", "GitHub", "Postman"]}
+    />
+
+    <MiniCard title="AI Tools" lines={["Cursor AI", "GitHub Copilot"]} />
+  </div>
+
+</div>
+
       </div>
     </section>
   );
