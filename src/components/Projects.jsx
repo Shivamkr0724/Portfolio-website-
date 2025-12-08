@@ -18,8 +18,8 @@ const projects = [
         stackTop: ["React", "Node.js", "Express.js", "MongoDB"],
         excerpt: "A full-stack grocery delivery app with real-time cart, admin management, and secure user ordering.",
         image: projectTwo,
-        githubLink:"https://github.com/Shivamkr0724/FullStack-Green-Cart.git",
-        liveLink: "https://green-cart-jxqw.vercel.app/",
+        gitHubLink:"https://github.com/Shivamkr0724/FullStack-Green-Cart.git",
+        LiveLink: "https://green-cart-jxqw.vercel.app/",
   },
   {
     
@@ -27,8 +27,8 @@ const projects = [
         stackTop: ["React","Next.js","Sanity","TailwindCSS","ShadCN","TypeScript"],
         excerpt: "Discover and explore movies ranked by real engagement.",
         image: porjectThree,
-        githubLink: "https://github.com/Shivamkr0724/YC-Directory.git",
-        liveLink: "https://yc-directory-pied-one.vercel.app/",
+        gitHubLink: "https://github.com/Shivamkr0724/YC-Directory.git",
+        LiveLink: "https://yc-directory-pied-one.vercel.app/",
   },
 ];
 
