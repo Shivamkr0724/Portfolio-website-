@@ -14,20 +14,21 @@ const projects = [
     LiveLink: "https://ai-resume-analyzer-pi-livid.vercel.app/",  
   },
   {
-    title: "TastyTrove",
-    stackTop: "React, Mistral AI ",
-    excerpt: "Type what you have — get delicious AI-powered recipe ideas",
-    image: projectTwo,
-    gitHubLink: "https://github.com/Shivamkr0724/TastyTrove.git",
-    LiveLink: "https://recipe-app-ebon-kappa.vercel.app/",
+        title: "Green Cart",
+        stackTop: ["React", "Node.js", "Express.js", "MongoDB"],
+        excerpt: "A full-stack grocery delivery app with real-time cart, admin management, and secure user ordering.",
+        image: projectTwo,
+        githubLink:"https://github.com/Shivamkr0724/FullStack-Green-Cart.git",
+        liveLink: "https://green-cart-jxqw.vercel.app/",
   },
   {
-    title: "Flim-Flix",
-    stackTop: "react-native, TypeScript, Appwrite, Expo, Tailwind CSS, Nativewind  ",
-    excerpt: "Discover and explore movies ranked by real engagement.",
-    image: porjectThree,
-    gitHubLink: "https://github.com/Shivamkr0724/Movie_app",
-    LiveLink: "https://github.com/Shivamkr0724/Movie_app",
+    
+        title: "YC-Directory",
+        stackTop: ["React","Next.js","Sanity","TailwindCSS","ShadCN","TypeScript"],
+        excerpt: "Discover and explore movies ranked by real engagement.",
+        image: porjectThree,
+        githubLink: "https://github.com/Shivamkr0724/YC-Directory.git",
+        liveLink: "https://yc-directory-pied-one.vercel.app/",
   },
 ];
 
