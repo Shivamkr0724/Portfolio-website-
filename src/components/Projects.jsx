@@ -15,7 +15,7 @@ const projects = [
   },
   {
         title: "Green Cart",
-        stackTop: ["React", "Node.js", "Express.js", "MongoDB"],
+        stackTop: "React, Node.js, Express.js, MongoDB",
         excerpt: "A full-stack grocery delivery app with real-time cart, admin management, and secure user ordering.",
         image: projectTwo,
         gitHubLink:"https://github.com/Shivamkr0724/FullStack-Green-Cart.git",
@@ -24,7 +24,7 @@ const projects = [
   {
     
         title: "YC-Directory",
-        stackTop: ["React","Next.js","Sanity","TailwindCSS","ShadCN","TypeScript"],
+        stackTop: "React, Next, Sanity, TailwindCSS, ShadCN",
         excerpt: "Discover and explore movies ranked by real engagement.",
         image: porjectThree,
         gitHubLink: "https://github.com/Shivamkr0724/YC-Directory.git",

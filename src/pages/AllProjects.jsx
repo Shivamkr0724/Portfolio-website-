@@ -94,15 +94,15 @@ const smallProjects = [
     stack: "React CSS clsx",
     title: "Assembly-Endgame 👾",
     desc: "A fun and interactive word guessing game built with React.js that challenges players to guess hidden words within limited attempts.",
-    live: "https://json-tree-visualizer-nine.vercel.app/",
-    github: "https://github.com/Shivamkr0724/JSON-Tree-Visualizer"
+    live: "https://assembly-endgame-amber.vercel.app/",
+    github: "https://github.com/Shivamkr0724/Assembly-Endgame.git"
   },
   {
     id: 4,
     tag: "React Tailwind Css React Flow",
     title: "JSON-Tree-Visualizer 🌲",
     desc: "It allows users to easily visualize, explore, and search through complex JSON data in an interactive tree format.",
-    live: "https://assembly-endgame-amber.vercel.app/",
+    live: "https://json-tree-visualizer-nine.vercel.app/",
     github: "https://json-tree-visualizer-nine.vercel.app/"
   },
   {
